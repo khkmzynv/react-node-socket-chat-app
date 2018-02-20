@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 220px;
+  margin: auto;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.messages {
+  flex-grow: 1;
+  overflow: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.message {
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin: 10px;
+  .label {
+    white-space: normal;
+  }
+}
+
+div.myMessage {
+  align-self: flex-end;
+  .avatar {
+    background-color: #FF8C00;
+    color: #FFF;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+div.textField {
+  flex-grow: 1;
+  margin-right: 10px;
+}
